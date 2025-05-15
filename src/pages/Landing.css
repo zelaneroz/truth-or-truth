@@ -1,0 +1,109 @@
+.landing-container {
+  height: 100vh;
+  background-color: #48a9c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-box {
+  background: #2e2e2e;
+  border-radius: 40px;
+  padding: 3rem;
+  text-align: center;
+  color: #f2f2f2;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.title-bold {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.title-slash {
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.title-colored {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fbc02d;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  color: #ddd;
+}
+
+.start-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #fbc02d;
+  color: #2e2e2e;
+  border-color: #fbc02d;
+}
+
+.player-count {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #fbc02d;
+}
+
+/* Decorative image base */
+.decor {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+}
+
+/* Switched: Top-left now shows dice2.png */
+.dice-top-left {
+  top: -5vw;
+  left: -2.5vw;
+  width: 18vw;
+  max-width: 180px;
+  aspect-ratio: 1 / 1;
+  background-image: url('../../public/assets/dice2.png'); /* switched image */
+}
+
+/* Top-right beside left: now shows dice1.png */
+.dice-top-right {
+  top: -5vw;
+  left: 10vw;
+  width: 15vw;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  background-image: url('../../public/assets/dice1.png'); /* switched image */
+}
+
+/* Bottom-right card */
+.card-bottom-right {
+  bottom: -2vw;
+  right: -3.5vw;
+  width: 20vw;
+  max-width: 40vw;
+  aspect-ratio: 1 / 1;
+  background-image: url('../../public/assets/card.png');
+  /* transform: rotate(5deg); */
+}
+
+
