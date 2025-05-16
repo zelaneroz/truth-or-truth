@@ -66,15 +66,11 @@ git clone https://github.com/zelaneroz/truth-or-truth.git
 cd truth-or-truth
 npm install
 npm start
-
+```
 
 ## 📈 Future Enhancements
-Add animated transitions between cards
-
-Firebase Firestore integration to track real player visits
-
-Mobile-optimized interactions
-
-Dark mode toggle
-
-Backend (Node.js or Supabase) for saved responses
+* Add animated transitions between cards
+* Firebase Firestore integration to track real player visits
+* Mobile-optimized interactions
+* Dark mode toggle
+* Backend (Node.js or Supabase) for saved responses
