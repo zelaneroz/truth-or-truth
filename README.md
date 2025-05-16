@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Truth or Truth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Truth or Truth** is a minimalist web application that brings emotional depth and connection to digital spaces. Inspired by *Truth or Dare* and *We’re Not Really Strangers*, it encourages meaningful conversations through curated question decks.
 
-## Available Scripts
+Built with ❤️ by Zelan Eroz 'Zee' Espanto
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+🚀 [Deployed Version (Coming Soon)](https://your-netlify-url.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📌 Features
 
-### `npm test`
+- 1-on-1 or Group Mode
+- Deck Selection (Friendship, Love, Family, Self, Spicy, Wildcard)
+- Decorative and dynamic landing page with responsive design
+- Card-by-card interaction: Skip or Answer
+- Player counter (Firebase integration planned)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Category       | Tools Used                      | Justification                                                  |
+|----------------|----------------------------------|----------------------------------------------------------------|
+| Frontend       | React, CSS                      | React for UI logic, CSS for responsive styling                |
+| Routing        | React Router DOM                | Clean navigation between landing, setup, and game views       |
+| State Mgmt     | React useState / props          | Lightweight state for mode/deck choice                        |
+| Hosting        | Netlify                         | Free, fast static site hosting                                |
+| Design         | Figma (Planning)                | Used for UI layout and flow diagram                           |
+| Version Control| Git + GitHub                    | Collaboration and deployment-ready commits                    |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
+```
+truth-or-truth/
+├── public/
+│   └── assets/          # dice1.png, dice2.png, card.png
+├── src/
+│   ├── pages/
+│   │   ├── Landing.jsx
+│   │   ├── Landing.css
+│   │   ├── Setup.jsx
+│   │   └── Setup.css
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Wireframe
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Web App Diagram](./diagram.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> `diagram.png` is a placeholder. Update this with your actual planning or site map image from Figma, Miro, or hand-drawn sketch!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📌 To Run Locally
 
-### Code Splitting
+```bash
+git clone https://github.com/zelaneroz/truth-or-truth.git
+cd truth-or-truth
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## 📈 Future Enhancements
+Add animated transitions between cards
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Firebase Firestore integration to track real player visits
 
-### Making a Progressive Web App
+Mobile-optimized interactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Dark mode toggle
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Backend (Node.js or Supabase) for saved responses
