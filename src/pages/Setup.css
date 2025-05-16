@@ -1,0 +1,99 @@
+/* src/pages/Setup.css */
+
+.setup-container {
+  height: 100vh;
+  background-color: #48a9c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.setup-box {
+  background-color: #fdf1e6;
+  border-radius: 50px;
+  padding: 3rem;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: 800;
+}
+
+.button-group,
+.deck-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #2a9bc7;
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #2a9bc7;
+  color: white;
+}
+
+button.selected {
+  background-color: #2a9bc7;
+  color: white;
+}
+
+.next-button {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background-color: #2a9bc7;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .setup-box {
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .next-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    bottom: 20px;
+    right: 20px;
+  }
+}
